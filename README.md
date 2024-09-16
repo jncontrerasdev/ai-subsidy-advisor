@@ -29,7 +29,7 @@ Ensure you have the following installed on your machine:
 
 5. Set up environment variables (Optional: if you have environment-specific settings):
     cp .env.example .env
-    # Edit .env as necessary
+    Edit .env as necessary
 
 6. Run the FastAPI server
     uvicorn app:app --reload
