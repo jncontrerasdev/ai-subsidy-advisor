@@ -1,0 +1,27 @@
+.chat-window {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.message.user {
+    background-color: #FFD580;
+    text-align: right;
+}
+
+.message.ai {
+    background-color: #e2e3e5;
+}
+
+.confidence-score {
+    font-weight: 600;
+}
