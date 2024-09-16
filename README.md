@@ -17,35 +17,35 @@ Ensure you have the following installed on your machine:
    ```bash
    git clone https://github.com/jncontrerasdev/mstr-assignment.git
    
-2. Navigate to the backend directory
-    cd ai-subsidy-advisor/backend
+2. Navigate to the backend directory:
+    - cd ai-subsidy-advisor/backend
 
 3. Create a virtual environment (recommended):
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    - python3 -m venv venv
+    - source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 4. Install Python dependencies:
-    pip install -r requirements.txt
+    - pip install -r requirements.txt
 
 5. Set up environment variables (Optional: if you have environment-specific settings):
-    cp .env.example .env
-    Edit .env as necessary
+    - cp .env.example .env
+    - Edit .env as necessary
 
 6. Run the FastAPI server
-    uvicorn app:app --reload
+    - uvicorn app:app --reload
 
 The FastAPI server should now be running at http://127.0.0.1:8000
 
 ## Frontend Setup (React)
 
 1. Navigate to the frontend directory:
-    cd ai-subsidy-advisor/frontend
+    - cd ai-subsidy-advisor/frontend
 
 2. Install Node dependencies:
-    npm install
+    - npm install
 
 3. Start the React development server:
-    npm start
+    - npm start
 
 The React app should now be running at http://localhost:3000
 
