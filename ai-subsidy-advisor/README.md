@@ -15,7 +15,7 @@ Ensure you have the following installed on your machine:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/ai-subsidy-advisor.git
+   git clone https://github.com/jncontrerasdev/mstr-assignment.git
    
 2. Navigate to the backend directory
     cd ai-subsidy-advisor/backend
