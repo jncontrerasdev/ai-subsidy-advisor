@@ -33,7 +33,7 @@ Ensure you have the following installed on your machine:
     - Edit .env as necessary
 
 6. Run the FastAPI server
-    - uvicorn app:app --reload
+    - uvicorn app.main:app --reload
 
 The FastAPI server should now be running at http://127.0.0.1:8000
 
@@ -58,3 +58,5 @@ The React app should now be running at http://localhost:3000
 ## Common Issues
 - 403 Cloudflare Block: If you encounter a 403 error, it may be caused by Cloudflare. Ensure you're running the project locally for development and testing.
 - Query Contains Unsafe Content: If the backend responds with a 400 status code and "Query contains unsafe content", check the is_safe_query function for harmful patterns.
+- 500 Internal Server Error: Ensure your backend routes and database configurations are correct. Check FastAPI logs for more detailed error messages.
+- Failed to Fetch Chat History: This may occur if the endpoint URL is incorrect or if the backend server is not reachable. Ensure the URL is correct and the backend server is running.
