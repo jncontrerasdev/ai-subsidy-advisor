@@ -9,7 +9,6 @@ export const handleSendMessage = async (input, setMessages, setError, setLoading
   // Fetch AI's response
   try {
     const response = await getSubsidyAdvice(input);
-
     setMessages(prevMessages => [
       ...prevMessages,
       { text: response.advice, sender: 'ai', confidence: response.confidence }
@@ -19,4 +18,12 @@ export const handleSendMessage = async (input, setMessages, setError, setLoading
   } finally {
     setLoading(false);
   }
+};
+
+export const fetchChatHistory = async () => {
+  const response = await fetch('http://localhost:8000/chat-history');
+  if (!response.ok) {
+    throw new Error('Failed to fetch chat history');
+  }
+  return response.json();
 };
