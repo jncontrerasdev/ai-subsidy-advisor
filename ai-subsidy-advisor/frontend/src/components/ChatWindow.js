@@ -26,6 +26,7 @@ ChatWindow.propTypes = {
     PropTypes.shape({
       text: PropTypes.string.isRequired,
       sender: PropTypes.string.isRequired,
+      typing: PropTypes.bool
     })
   ).isRequired,
 };

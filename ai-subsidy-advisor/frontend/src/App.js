@@ -29,8 +29,8 @@ const App = () => {
   }, []);
 
   const handleSend = async (input) => {
-    handleSendMessage(input, setMessages, setError, setLoading);
-  }
+    await handleSendMessage(input, setMessages, setError, setLoading);
+  };
 
   return (
     <div className="app">
